@@ -1,4 +1,4 @@
-# djavue_iptv
+# project name
 
 ## Project setup
 ```

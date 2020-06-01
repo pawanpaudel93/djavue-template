@@ -1,32 +1,10 @@
-.DS_Store
-node_modules
-/dist
-/venv
-package-lock.json
-webpack-stats.json
-__pycache__
 
-# local env files
-.env.local
-.env.*.local
-.env
-
-# Log files
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Editor directories and files
-.idea
-.vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw*
+# Created by https://www.gitignore.io/api/django
+# Edit at https://www.gitignore.io/?templates=django
 
 ### Django ###
 *.log
+*.env
 *.pot
 *.pyc
 __pycache__/
@@ -35,7 +13,7 @@ db.sqlite3
 db.sqlite3-journal
 media
 staticfiles
-
+yarn.lock
 # If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
 # in your Git repository. Update and uncomment the following line accordingly.
 # <django-project-name>/staticfiles/
@@ -142,3 +120,35 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+.idea
+.ipynb_checkpoints
+shell extras.ipynb
+# End of https://www.gitignore.io/api/django
+
+# VueJS
+.DS_Store
+node_modules/
+/dist/
+
+# local env files
+.env.dev
+.env.*.dev
+
+.env.prod
+.env.*.prod
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+**/migrations/**
+webpack-stats.json
