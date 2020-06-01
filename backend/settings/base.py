@@ -12,11 +12,9 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 SETTINGS_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(SETTINGS_DIR)
 
-# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 # Application definition
@@ -98,17 +96,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-# When Vue Builds, path will be `/static/css/...` so we will have Django Serve
-# In Production, it's recommended use an alternative approach such as:
-# http://whitenoise.evans.io/en/stable/django.html?highlight=django
-
-MIDDLEWARE_CLASSES = (
-    'whitenoise.middleware.WhiteNoiseMiddleware',
-)
-
-##########
-# STATIC #
-##########
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = ['static',]
