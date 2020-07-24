@@ -8,7 +8,7 @@
         {
           "plan": "heroku-postgresql",
           "options": {
-            "version": "12.3"
+            "version": "12"
           }
         }
     ],
@@ -22,14 +22,20 @@
       ],
     "env": {
         "DJANGO_SECRET_KEY": {
-            "description": "django secret key",
+            "description": "Django Secret key",
             "generator": "secret"
         },
         "DJANGO_DEBUG": {
-            "value": false
+            "description": "Django Debug must be False for production",
+            "value": "False"
         },
         "ALLOWED_HOSTS": {
+            "description": "List of allowed hosts",
            "value": ".herokuapp.com"
+        },
+        "VUE_APP_BASEURL": {
+            "description": "Base Heroku app URL. It should similar to djavue-template.herokuapp.com but for your website url",
+            "value": ".herokuapp.com"
         }
     }
   }
