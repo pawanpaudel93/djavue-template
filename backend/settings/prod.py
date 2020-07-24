@@ -18,6 +18,6 @@ SECRET_KEY = config('DJANGO_SECRET_KEY')
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=lambda v: [s.strip() for s in v.split(',')])
 
 CORS_ORIGIN_WHITELIST = [
-   "http:" + config('VUE_APP_BASEURL'),
-   "https:" + config('VUE_APP_BASEURL')
+   "http://" + config('VUE_APP_BASEURL'),
+   "https://" + config('VUE_APP_BASEURL')
 ]
