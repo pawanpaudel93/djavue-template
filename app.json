@@ -1,0 +1,35 @@
+{
+    "name": "djavue-template",
+    "description": "Django+VueJS template",
+    "repository": "https://github.com/pawanpaudel93/djavue-template",
+    "logo": "src/assets/logo.png",
+    "keywords": ["django", "vuejs", "django webpack loader", "vuex", "axios", "DRF"],
+    "addons": [
+        {
+          "plan": "heroku-postgresql",
+          "options": {
+            "version": "12.3"
+          }
+        }
+    ],
+    "buildpacks": [
+        {
+          "url": "heroku/python"
+        },
+        {
+          "url": "heroku/nodejs"
+        }
+      ],
+    "env": {
+        "DJANGO_SECRET_KEY": {
+            "description": "django secret key",
+            "generator": "secret"
+        },
+        "DJANGO_DEBUG": {
+            "value": false
+        },
+        "ALLOWED_HOSTS": {
+           "value": ".herokuapp.com"
+        }
+    }
+  }
