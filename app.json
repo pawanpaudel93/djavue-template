@@ -8,7 +8,7 @@
         {
           "plan": "heroku-postgresql",
           "options": {
-            "version": "12.3"
+            "version": "12"
           }
         }
     ],
@@ -27,7 +27,7 @@
         },
         "DJANGO_DEBUG": {
             "description": "Django Debug must be False for production",
-            "value": false
+            "value": "False"
         },
         "ALLOWED_HOSTS": {
             "description": "List of allowed hosts",
