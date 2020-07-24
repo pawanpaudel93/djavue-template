@@ -22,14 +22,20 @@
       ],
     "env": {
         "DJANGO_SECRET_KEY": {
-            "description": "django secret key",
+            "description": "Django Secret key",
             "generator": "secret"
         },
         "DJANGO_DEBUG": {
+            "description": "Django Debug must be False for production",
             "value": false
         },
         "ALLOWED_HOSTS": {
+            "description": "List of allowed hosts",
            "value": ".herokuapp.com"
+        },
+        "VUE_APP_BASEURL": {
+            "description": "Base Heroku app URL. It should similar to djavue-template.herokuapp.com but for your website url",
+            "value": ".herokuapp.com"
         }
     }
   }
