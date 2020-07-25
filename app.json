@@ -2,7 +2,7 @@
     "name": "djavue-template",
     "description": "Django+VueJS template",
     "repository": "https://github.com/pawanpaudel93/djavue-template",
-    "logo": "src/assets/logo.png",
+    "logo": "https://raw.githubusercontent.com/pawanpaudel93/djavue-template/master/static/djavue.jpg",
     "keywords": ["django", "vuejs", "django webpack loader", "vuex", "axios", "DRF"],
     "addons": [
         {
